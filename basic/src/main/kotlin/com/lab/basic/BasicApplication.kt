@@ -8,6 +8,14 @@ import org.springframework.boot.runApplication
 class BasicApplication
 
 fun main(args: Array<String>) {
-    runApplication<BasicApplication>(*args)
-        .getBean(DynamicEnvironmentUpdater::class.java)
+    val context = runApplication<BasicApplication>(*args)
+
+    val initialValue = context.environment.getProperty("app.mode")
+    println("변경 전 앱 모드: $initialValue")
+
+    val updater = context.getBean(DynamicEnvironmentUpdater::class.java)
+    updater.updateProperty("app.mode", "update")
+
+    val updatedValue = context.environment.getProperty("app.mode")
+    println("변경 후 앱 모드: $updatedValue")
 }

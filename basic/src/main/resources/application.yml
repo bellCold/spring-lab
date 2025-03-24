@@ -1,2 +1,5 @@
 environment:
   property: bellCold
+
+app:
+  mode: maintenance
