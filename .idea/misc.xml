@@ -7,6 +7,8 @@
     <file type="web" url="file://$PROJECT_DIR$/basic" />
     <file type="web" url="file://$PROJECT_DIR$/jooq" />
     <file type="web" url="file://$PROJECT_DIR$/jpa" />
+    <file type="web" url="file://$PROJECT_DIR$/kotlin" />
+    <file type="web" url="file://$PROJECT_DIR$/language" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
