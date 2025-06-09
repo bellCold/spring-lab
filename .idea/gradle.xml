@@ -53,16 +53,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/kotlin/test" />
         <option name="gradleJvm" value="openjdk-21" />
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/language" />
-        <option name="gradleHome" value="" />
-        <option name="gradleJvm" value="openjdk-21" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/language" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>
