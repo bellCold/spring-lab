@@ -1,5 +1,39 @@
+spring:
+  application:
+    name: spring-lab-basic
+  profiles:
+    active: development
+
 environment:
   property: bellCold
 
 app:
   mode: maintenance
+  custom:
+    message: "Hello from EnvironmentAware Bean!"
+    version: "1.0.0"
+    debug: true
+
+# 개발 환경 설정
+---
+spring:
+  config:
+    activate:
+      on-profile: development
+
+app:
+  custom:
+    message: "Development Environment Message"
+    debug: true
+
+# 운영 환경 설정
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+
+app:
+  custom:
+    message: "Production Environment Message"
+    debug: false
